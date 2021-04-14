@@ -3,7 +3,7 @@ $(document).ready(function (){
     var Validation = (function (){
         var emailReg = /^[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
         var digitReg = /^\d+$/;
-        
+        //dfdf
         var isEmail = function (email){
             return emailReg.test(email);
         };
