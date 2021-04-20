@@ -41,12 +41,12 @@ public class frame extends Baseclass {
 		String str1 = driver.findElement(get_iframeheader).getText();
 		assertTrue(str1.equals("An iFrame containing the TinyMCE WYSIWYG Editor"));
 		
-		driver.switchTo().frame("mce_0_ifr");
+		driver.switchTo().frame("mce_0_ifr");//Enter frame
 		driver.findElement(remove_text).clear();
 		
 		
 		
-		driver.switchTo().defaultContent();
+		driver.switchTo().defaultContent();//Exit frame
 		
 		String txt_file_parentmenu = driver.findElement(txt_file).getText();
 		System.out.println("Parent Menu File option is visible: "+txt_file_parentmenu);
